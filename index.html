@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>catodesign/landingpage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light" id="barra">
+        <div class="container">
+            <a class="cato" id="cato" href="./index.html"><img class="tipo" src="./assets/img/tipologo.png" alt="CATO DESIGN"></a>
+            <button class="navbar-toggler" id="lineas" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" id="ir-act" href="#home">Conócenos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="ir-act" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="ir-act" href="#formulario">Registro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+        <div class="inicio">
+        <video autoplay muted loop id="myvideo">
+            <source src="./assets/img/video_inicio.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <img class="logo-cato" src="./assets/img/logofinal.png" alt="Logotipo">
+        </div>
+        <section id="home">
+            <div class="container">
+            <div class="row align-items-center">
+                <div class="conocenos">
+                    <div class="col">
+                        <img class="img-thumbnail" id="about" src="./assets/img/img-1.jpg" alt="imagen_logotipo">
+                    </div>
+                    <div class="col" id="col2">
+                        <h3>CATO DESIGN</h3>
+                        <p>Cato Design es un nuevo estudio de Diseño Gráfico, nacido de las inquietudes de dos jóvenes andaluzas. Dos chicas graduadas en Bellas Artes que decidieron, hace apenas un año, emprender un nuevo camino, el del diseño.
+                            <br>
+                            <br>
+                            En esta página podrás disfrutar de novedades en diseño, además de, nuevos proyectos dentro del ámbito del diseño gráfico, web y su desarrollo.
+                            <br>
+                            <br>
+                            <span style="color:#A0ADBD;font-weight: normal; font-size: 20px;">Registrándote podrás ver todas estas novedades al instante y disfrutar de todos los nuevos diseños e inspiración.</span>
+                        </p>
+                        <a class="oficial" href="https://begocadenas.github.io/catodesign/index.html">Ir al sitio oficial</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    </div>
+
+    <section id="proyectos">
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 g-3 text-center">
+            <div class="col">
+                <br>
+                <div class="integracion">
+                    <img class="icono" src="./assets/img/web.jpg" alt="">
+                    <div class="explicacion">
+                        <p>Creación de la web CATO Design</p>
+                    </div>
+                </div>
+                <p class="movil"><small class="text-muted">Pincha en la imagen para saber más</small></p>
+            </div>
+            <div class="col">
+                <br>
+                <div class="integracion1">
+                    <img class="icono" src="./assets/img/ilustracion-1.jpg" alt="">
+                    <div class="explicacion1">
+                        <p>Ilustración creada por vectores con Illustrator</p>
+                    </div>
+                </div>
+                <p class="movil"><small class="text-muted">Pincha en la imagen para saber más</small></p>
+            </div>
+            <div class="col">
+                <br>
+                <div class="integracion2">
+                    <img class="icono" src="./assets/img/fotografia.jpg" alt="">
+                    <div class="explicacion2">
+                        <p>Fotografía Gijón Playa. Ningún retoruqe fotográfico.</p>
+                    </div>
+                </div>
+                <p class="movil"><small class="text-muted">Pincha en la imagen para saber más</small></p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="formulario">
+        <form action="./proceso_registro.php" method="POST">
+            <h2>Regístrate</h2>
+            <p>¡Regístrate ahora y recibe todas las novedades en noticias y productos!</p>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="fname" name="nombre" placeholder="Escribe aquí">
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="lname" name="apellidos" placeholder="Escribe aquí">
+
+            <label for="email">Email:</label>
+            <input type="email" id="mail" name="email" placeholder="Email">
+
+            <br>
+            <br>
+
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">He leído y acepto todas las condiciones</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked">Acepto todas las Cookies</label>
+            </div>
+
+            <input class="send" id ="send" type="submit" value="Registrarme">
+        </form>
+    </section>
+
+    <div class="textos-legales">
+        <a class="nav-link" id="texto-legal" href="./textos legales/legal.html" target="_blank">Aviso Legal</a>
+        <h>|</h>
+        <a class="nav-link" id="texto-legal" href="./textos legales/cookies.html" target="_blank">Política de Cookies</a>
+        <h>|</h>
+        <a class="nav-link" id="texto-legal" href="./textos legales/privacidad.html" target="_blank">Política de Privacidad</a>
+    </div>
+
+
+
+    <script src="./assets/jquery.js"></script>
+    <script src="./assets/acciones.js"></script>
+</body>
+
+</html>
